@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: #e7d8c9;
+}
+
+.wrapper {
+    padding: 3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    display: flex;
+    margin-top: 2em; 
+}
+nav li a {
+    color: #4e4b4b;
+    font-weight: bold;
+    padding: .3em;
+    margin-right: 1.3em;
+    padding: .5em .9em;
+    background-color: #ede0d4;
+    border-radius: 2em; 
+}
+.hero-left {
+    text-align: center;
+ }
+.logo{
+    color: #592e83;
+}
+.logo{
+    font-weight: bold;
+    font-size: 1.7em;
+   
+}
+.logo1{
+    margin-top: -50px;
+    font-size: 3em;
+}
+.start {
+    font-size: 1.2em;
+    width: 80%;
+    margin: 1em auto;
+}
+a.cta-btn {
+    color: white;
+    background: #592e83;
+    padding: .8em 1.5em;
+    border-radius: 1.8em; 
+    font-weight: bold;
+    margin: 1em 0 2.5em;
+    display: inline-block; 
+}
+.picture{
+    border-radius: 0.4em;
+    position: absolute;
+    z-index: -1;
+    height: 27em;
+}
+.testimonials{
+    text-align: center;
+}
+  
+ .test1{
+    background: rgba(255, 255, 255, 0.757);
+    padding: 1em;
+    margin: -3em 0em 0em -3em;
+    font-size: .9em;
+    font-weight: bold;
+    border-radius: 0.5em;
+}
+.test2{
+    background: rgba(255, 255, 255, 0.757);
+    padding: 1em;
+    margin: 0em 0em 0em -3em;
+    font-size: .9em;
+    font-weight: bold;
+    border-radius: 0.5em;
+}
+.test3{
+    background: rgba(255, 255, 255, 0.757);
+    padding: 1em;
+    margin: 0em 0em 0em -3em;
+    font-size: .9em;
+    font-weight: bold;
+    border-radius: 0.5em;
+} 
+.footer{
+    font-weight: lighter;
+    text-align: center;
+}
+/* media queries */
+
+@media (min-width: 700px) {    
+   .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav ul {
+         margin-top: 9px;
+    }
+    .start{
+        line-height: 2em;
+    }
+    .testimonials{
+        display: flex;
+        flex-direction: row;
+    }  
+   .test1{
+
+   } 
+   .test2{
+        margin-top: 5em;
+   } 
+   .test3{
+        margin-top: 10em;
+   }
+}
+@media (min-width: 1100px) {  
+    .testimonials{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(2,auto);
+        grid-gap: 1em;
+    }  
+   .test1{
+        margin-top: 0;
+        background: rgba(255, 255, 255, 0.882);
+   } 
+   .test2{
+        margin-top: 0;
+        background: rgba(255, 255, 255, 0.882);
+   } 
+   .test3{
+        margin-top: -.2em;
+        background: rgba(255, 255, 255, 0.882);
+   }
+   ul.testimonials li:nth-of-type(3) {
+         grid-area: 2 / 1 / 2 / 3;
+    }
+}
